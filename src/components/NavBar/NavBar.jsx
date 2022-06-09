@@ -1,12 +1,20 @@
+import "./NavBar.css"
+import NavLink from "./NavLink/NavLink"
+import CartWidget from "./CartWidget/CartWidget"
+
 export default function NavBar() {
     return (
-        <nav>
-            <ul>
-                <li><a href="/">NavLink</a></li>
-                <li><a href="/">NavLink 2</a></li>
-                <li><a href="/">NavLink 3</a></li>
+
+        <nav className="navbar">
+            <ul className="navbar-list">
+                <NavLink/>
+                <NavLink/>
+                <NavLink/>
+                <NavLink/>
+                <CartWidget/>
             </ul>
         </nav>
+
     )
 }
 

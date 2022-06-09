@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.navbar-list__link{
+    text-decoration: none;
+    color: rgb(21, 10, 34);
+    font-weight: bold;
+}
+
+.navbar-list__item{
+    padding: 10px 25px;
+    list-style-type: none;
+    font-family: sans-serif;
+    background-color: rgb(187, 182, 194);
+}
