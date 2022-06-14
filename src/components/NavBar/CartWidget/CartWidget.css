@@ -1,3 +1,10 @@
 .cart-icon{
+    padding-top: 3px;
     font-size: 30px;
+    color: hsl(208, 27%, 43%)  
+}
+
+.cart-icon:hover{
+    transform:scale(.9);
+    color: hsl(209, 59%, 22%);
 }

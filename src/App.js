@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer.
 function App() {
   return (<>
         <NavBar/>
-        <ItemListContainer title="Cpu" description="An extremly powerful cpu"/>
+        <ItemListContainer greet="An Item"/>
         </>
   )
 }
