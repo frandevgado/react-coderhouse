@@ -1,9 +1,7 @@
-.item-list-container{
-    display: inline-block;
-    min-width: 260px;
-    min-height: 450px;
-    background-color: rgb(197, 108, 108);
-    
-    color: white;
-    text-align: center;
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
