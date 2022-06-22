@@ -1,14 +1,20 @@
 import { useState, useEffect } from "react"
-import itemProducts from "../mock/products"
 import ItemDetail from "./ItemDetail/ItemDetail"
+import { useParams } from 'react-router-dom'
+import itemProducts from "../mock/products"
+
 
 const ItemDetailContainer = ({greet}) =>{
     const [product, setProduct] = useState({})
+    const {id} = useParams()
 
     useEffect(() => {
+
         const bringProduct = new Promise ((res, rej) =>{
             setTimeout(() => {
-                res(itemProducts[0])
+                let itemId = parseInt(id)
+                const itemFound = itemProducts.find(item => item.id === itemId)
+                res(itemFound)
             }, 1000)
         })
 
@@ -16,7 +22,7 @@ const ItemDetailContainer = ({greet}) =>{
         bringProduct.catch((error) => console.log(error))
 
 
-    }, [])
+    }, [id])
 
     console.log(product)
     
