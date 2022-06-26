@@ -13,8 +13,6 @@ const ItemCount = ({initial, stock, onAdd}) =>{
         setCount(count + 1)
     }
 
-    
-
     return(
         <div className="item-count-container">
             <button className="item-count item-count--minus" disabled={count <=1} onClick={decrease}>-</button>

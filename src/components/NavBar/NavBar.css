@@ -27,7 +27,7 @@ body{
     text-decoration: none;
     color: var(--unactive-color);
     font-weight: 800;
-    font-family: 'Quicksand';
+    font-family: 'Montserrat';
 }
 
 .navbar-list__link:hover{

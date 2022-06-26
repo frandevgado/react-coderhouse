@@ -1,36 +1,49 @@
 .item-count-container{
     width: 150px;
     height: fit-content;
+    margin-top: 15px;
     padding: 15px 10px;
     border-radius: 5px;
 
-    background-color: hsl(209, 59%, 22%);
+    background-color: hsl(209, 100%, 83%);
     text-align: center;
 }
 
 .item-count{
-    margin: 0 7px;
+    margin: 0 15px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border-color: #fff;
+    border-color: hsl(209, 59%, 22%);
+    border-style: solid;
     background-color: hsl(209, 100%, 83%);
+    cursor: pointer;
 
     font-family: 'arial';
+}
+
+.item-count:hover{
+    color: #fff;
 }
 
 .item-count__add-to{
     margin-top: .7rem;
     padding: 10px;
     border-radius: 5px;
+    border-style: solid;
     border-color: hsl(209, 59%, 22%);
     background-color: hsl(209, 100%, 83%);
+    cursor:pointer;
 
     font-family: 'Quicksand';
+}
+
+.item-count__add-to:hover{
+    color: #fff;
 }
 
 .item-count-number{
     font-family: 'Quicksand';
     font-size: 1em;
-    color: #fff;
+    color: hsl(209, 59%, 22%);
 }

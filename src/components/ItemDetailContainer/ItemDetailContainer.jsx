@@ -11,11 +11,9 @@ const ItemDetailContainer = ({greet}) =>{
     useEffect(() => {
 
         const bringProduct = new Promise ((res, rej) =>{
-            setTimeout(() => {
                 let itemId = parseInt(id)
                 const itemFound = itemProducts.find(item => item.id === itemId)
                 res(itemFound)
-            }, 1000)
         })
 
         bringProduct.then((res) => setProduct(res))

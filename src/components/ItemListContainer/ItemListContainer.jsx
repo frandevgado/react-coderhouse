@@ -1,5 +1,4 @@
 import "./ItemListContainer.css"
-import ItemCount from "./ItemCount/ItemCount"
 import ItemList from "./ItemList/ItemList"
 import itemProducts from "../mock/products"
 import { useState, useEffect } from "react"
@@ -29,15 +28,10 @@ export default function ItemListContainer({greet}){
     }, [categoryId])
 
     console.log(products)
-    
-    const onAdd = (quantity) =>{
-        console.log(`You just bought ${quantity} units!`)
-    }
 
     return(
      <div className="container">
         <ItemList items={products} />
-        <ItemCount initial={1} stock={10} onAdd={onAdd} />
      </div>
     )
 }
