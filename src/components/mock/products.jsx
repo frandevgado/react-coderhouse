@@ -1,6 +1,6 @@
 const itemProducts = [
      {id: 1,
-      name: 'Seleccion Argentina',
+      name: 'Camiseta Argentina',
       category: 'camisetas',
       price: 200,
       stock: 3,

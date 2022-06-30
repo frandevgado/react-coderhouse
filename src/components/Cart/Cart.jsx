@@ -1,4 +1,7 @@
+import { createContext, useContext } from "react"
+
 const Cart = () =>{
+    const {cart} = useContext(createContext)
     return(
         <>
         <h1>Cart</h1>

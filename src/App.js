@@ -3,9 +3,15 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer.
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx';
 import Cart from './components/Cart/Cart.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import appFirebase from './services/firestoreConfig.js'; hecho en clases, preparando...
+
+import { CartProvider } from './context/CartContext'
+
+// console.log(appFirebase)
 
 function App() {
-  return (<div>
+  return (
+    <CartProvider>
       <BrowserRouter>
         <NavBar/>
         <Routes>
@@ -15,7 +21,7 @@ function App() {
           <Route path="/cart/" element={<Cart/>}/>
         </Routes>
       </BrowserRouter>  
-        </div>
+    </CartProvider>  
   )
 }
 

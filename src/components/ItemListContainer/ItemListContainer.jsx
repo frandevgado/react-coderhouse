@@ -27,7 +27,6 @@ export default function ItemListContainer({greet}){
 
     }, [categoryId])
 
-    console.log(products)
 
     return(
      <div className="container">

@@ -22,7 +22,6 @@ const ItemDetailContainer = ({greet}) =>{
 
     }, [id])
 
-    console.log(product)
     
     return(
      <div className="container">
