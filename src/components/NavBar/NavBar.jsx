@@ -1,7 +1,6 @@
 import "./NavBar.css"
 import {Link} from 'react-router-dom'
 import CartWidget from "./CartWidget/CartWidget"
-
 import 'typeface-quicksand';
 
 
@@ -16,10 +15,9 @@ export default function NavBar() {
                 <li className="navbar-list__item"><Link className="navbar-list__link" to="categoria/camisetas">Camisetas</Link></li>
                 <li className="navbar-list__item"><Link className="navbar-list__link" to="categoria/shorts">Shorts</Link></li>
                 <li className="navbar-list__item"><Link className="navbar-list__link" to="categoria/botines">Botines</Link></li>
-                <CartWidget/>
+                <Link to="/cart"><CartWidget/></Link>
             </ul>
         </nav>
-
     )
 }
 

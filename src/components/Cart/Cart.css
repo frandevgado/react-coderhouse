@@ -1,0 +1,149 @@
+/*Carrito está vacío*/
+
+.empty-cart-text{
+    font-size: 2em;
+    color: hsl(209, 59%, 22%);
+    font-family: 'Montserrat';
+    font-weight: bolder;
+
+    text-align: center;   
+}
+
+.back-to-text{
+    display: block;
+
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color:hsl(209, 60%, 39%);
+
+    text-align: center;
+}
+
+/*Carrito no está vacío*/
+
+.cart-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-title{
+    margin: 1.5em 0em;
+
+    font-family: 'Montserrat';
+    font-size: 1.3em;
+    color:hsl(209, 59%, 22%);
+}
+
+.cart-all-item-container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart-item-container{
+    margin: 0px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    background-color: none;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cart-item-name{
+    display: inline-block;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.788);
+
+
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: .8em;
+    color: rgb(253, 253, 253);
+    z-index: 10;
+}
+
+.cart-item-price{
+    position:absolute;
+    margin-top: 105px;
+    padding: .3em;
+    border-radius: 5px;
+
+    font-size: .8em;
+    font-family: 'Montserrat';
+    align-self: center;
+    justify-self: end;
+
+    background-color: rgba(0, 0, 0, 0.788);
+    color:rgb(255, 255, 255);
+}
+
+.cart-item-quantity{
+    position: absolute;
+    display: inline-block;
+    margin: 130px 0px 0px 0px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.788);
+
+    font-family: 'Montserrat';
+    font-size: .8em;
+    color: rgb(255, 255, 255);
+ 
+    align-self: center;
+}
+
+.cart-item-img{
+    overflow: hidden;
+    border-radius: 15px;
+    position:absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.clear-item-cart{
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+
+    font-size: .7em;
+    font-family: 'Montserrat';
+    z-index: 20;
+    align-self: end;
+
+}
+
+.total-purchase-text{
+    margin: 1em 0em 0em 0em;
+
+    font-family: 'Montserrat';
+}
+
+.button-flex{
+    display: flex;
+    gap: 10px;
+}
+
+.button{
+    margin: 0px;
+    padding: 1em;
+    width: fit-content;
+    background-color: hsl(209, 100%, 83%);
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color:hsl(208, 26%, 31%)
+}
+
+button:hover{
+    color:hsl(209, 59%, 22%);
+}
