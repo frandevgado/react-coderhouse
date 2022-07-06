@@ -3,11 +3,15 @@ import ItemList from "./ItemList/ItemList"
 import itemProducts from "../mock/products"
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
-
+import { getItems } from "../../services/firestore"
 
 export default function ItemListContainer({greet}){
+
+    
     const {categoryId} = useParams()
     const [products, setProducts] = useState([])
+    
+    getItems().then(respuesta => console.log(respuesta))
 
     useEffect(() => {
         const bringProducts = new Promise ((res, rej) =>{

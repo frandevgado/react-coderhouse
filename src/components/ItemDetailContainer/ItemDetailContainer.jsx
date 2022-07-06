@@ -4,9 +4,12 @@ import { useParams } from 'react-router-dom'
 import itemProducts from "../mock/products"
 
 
+
 const ItemDetailContainer = ({greet}) =>{
     const [product, setProduct] = useState({})
     const {id} = useParams()
+
+
 
     useEffect(() => {
 

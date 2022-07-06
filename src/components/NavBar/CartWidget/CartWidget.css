@@ -8,3 +8,26 @@
     transform:scale(.9);
     color: hsl(209, 59%, 22%);
 }
+
+a{
+text-decoration: none;
+}
+
+.quantity-number{
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: hsl(0, 89%, 56%);
+
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Quicksand';
+    color: hsl(0, 0%, 100%);
+}
+
+.nav-cart-container{
+    margin: 3px 0px 0px 0px;
+    display: flex;
+}
