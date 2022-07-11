@@ -1,26 +1,21 @@
 import { useState, useEffect } from "react"
 import ItemDetail from "./ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
-import itemProducts from "../mock/products"
+import { getItem } from "../../services/firestore"
 
 
 
-const ItemDetailContainer = ({greet}) =>{
+const ItemDetailContainer = () =>{
     const [product, setProduct] = useState({})
     const {id} = useParams()
 
 
 
     useEffect(() => {
+        getItem(id)
 
-        const bringProduct = new Promise ((res, rej) =>{
-                let itemId = parseInt(id)
-                const itemFound = itemProducts.find(item => item.id === itemId)
-                res(itemFound)
-        })
-
-        bringProduct.then((res) => setProduct(res))
-        bringProduct.catch((error) => console.log(error))
+        .then((res) => setProduct(res))
+        .catch((error) => console.log(error))
 
 
     }, [id])

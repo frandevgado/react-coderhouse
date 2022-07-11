@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import "./Cart.css"
-
+import CartForm from './CartForm';
 import { CartContext } from '../../context/CartContext'
 
 const Cart = () => {
@@ -49,6 +49,7 @@ const Cart = () => {
 
         <button className="button button--confirm">Comprar</button>
       </div>
+      <CartForm/>  
     </div>
   )
 }

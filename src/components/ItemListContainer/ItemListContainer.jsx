@@ -1,33 +1,25 @@
 import "./ItemListContainer.css"
 import ItemList from "./ItemList/ItemList"
-import itemProducts from "../mock/products"
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
-import { getItems } from "../../services/firestore"
+import { getItems, getItemsForCategory } from "../../services/firestore"
 
-export default function ItemListContainer({greet}){
+export default function ItemListContainer(){
 
     
     const {categoryId} = useParams()
     const [products, setProducts] = useState([])
     
-    getItems().then(respuesta => console.log(respuesta))
-
     useEffect(() => {
-        const bringProducts = new Promise ((res, rej) =>{
-                if(categoryId === undefined){
-                    res(itemProducts)
-                }else{
-                    const itemCategory = itemProducts.filter(itemCat => {
-                        return itemCat.category === categoryId
-                    })
-                    res(itemCategory)
-                }
-        })
-
-        bringProducts.then((res) => setProducts(res))
-        bringProducts.catch((error) => console.log(error))
-
+        if(categoryId){
+            getItemsForCategory(categoryId)
+            .then(res => setProducts(res))
+            .catch(error => console.log(error))
+        }else{
+        getItems()
+        .then((res) => setProducts(res))
+        .catch((error) => console.log("No pudimos encontrar los productos", error))
+        }        
 
     }, [categoryId])
 

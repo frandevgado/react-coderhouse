@@ -3,14 +3,10 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer.
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx';
 import Cart from './components/Cart/Cart.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import appFirebase from './services/firestore.js'
 import { CartProvider } from './context/CartContext'
 
-import { testDatabase } from './services/firestore'
 
 function App() {
-
-  testDatabase()
 
   return (
     <CartProvider>

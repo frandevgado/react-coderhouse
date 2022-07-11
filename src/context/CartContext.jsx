@@ -1,6 +1,6 @@
 // 1. Creamos el contexto
 // 2. Exporto para consumirlo en los componentes que lo necesiten
-import { useState, useEffect } from "react";
+import { useState/*, useEffect*/ } from "react";
 import { createContext } from "react";
 
 export const CartContext = createContext()
@@ -9,10 +9,10 @@ export const CartProvider = ({children}) =>{
     const [cart, setCart] = useState([])
     
     
-    //console.log para ver si se van agregando sin quitar el anterior producto ↓
-    useEffect(()=>{
-        console.log(cart)
-    },[cart])
+    // //console.log para ver si se van agregando sin quitar el anterior producto ↓
+    // useEffect(()=>{
+    //     console.log(cart)
+    // },[cart])
     
 
     
