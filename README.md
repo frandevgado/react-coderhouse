@@ -21,18 +21,18 @@ Proyecto desarrollado React JS realizado para el curso de CoderHouse. Un E-Comme
 ### Iniciar proyecto localmente:
 Estos son los dos simples pasos a seguir para iniciarlo
 
-- Clonar repositorio 
-Copia el comando de abajo y pegalo en tu terminal git
+- Clonar repositorio:
+copia el comando de abajo y pegalo en tu terminal git
 ` git clone  https://github.com/frandevgado/react-coderhouse.git`
 
  --
 
-- Instalar modulos 
-Copia el comando a continuación y pegalo en tu terminal git
+- Instalar modulos:
+copia el comando a continuación y pegalo en tu terminal git
 `git npm install`
 
-- Iniciar app 
-Copia el comando a continuación y pegalo en tu terminal git
+- Iniciar app:
+copia el comando a continuación y pegalo en tu terminal git
 `git npm start`
 
 ------------
