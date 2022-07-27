@@ -32,7 +32,7 @@ const Cart = () => {
             <h1 className="cart-item-name">{item.name}</h1>
             <img className="cart-item-img" src={item.img} alt="product img" />
             <p className="cart-item-price" >Precio: ${item.price}</p>
-
+            <p className="cart-item-subtotal">Subtotal: {item.price * item.quantity} </p>
             <button onClick={() => { removeItem(item.id) }} className="clear-item-cart">X</button>
 
             <p className="cart-item-quantity">Cantidad: {item.quantity}</p>
@@ -47,7 +47,7 @@ const Cart = () => {
 
         <button onClick={clearCart} className="button button-clear">Vaciar Carrito</button>
 
-        <button className="button button--confirm">Comprar</button>
+    
       </div>
       <CartForm/>  
     </div>

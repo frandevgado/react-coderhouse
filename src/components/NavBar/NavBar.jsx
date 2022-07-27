@@ -3,11 +3,8 @@ import {Link} from 'react-router-dom'
 import CartWidget from "./CartWidget/CartWidget"
 import 'typeface-quicksand';
 
-
-
 export default function NavBar() {
 
-    
     return (
         <nav className="navbar">
             <ul className="navbar-list">
@@ -20,4 +17,3 @@ export default function NavBar() {
         </nav>
     )
 }
-

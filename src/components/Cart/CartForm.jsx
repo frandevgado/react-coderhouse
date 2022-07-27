@@ -30,6 +30,7 @@ const handleBuyOrder = (e) => {
     };
     createBuyOrder(dataOrder).then((orderDataCreated) => {
     clearCart();
+    console.log(orderDataCreated.id)
     });
 }
 

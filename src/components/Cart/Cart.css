@@ -1,6 +1,7 @@
 /*Carrito está vacío*/
 
 .empty-cart-text{
+    margin-top: 3em;
     font-size: 2em;
     color: hsl(209, 59%, 22%);
     font-family: 'Montserrat';
@@ -10,13 +11,22 @@
 }
 
 .back-to-text{
+    margin: 10px auto;
     display: block;
+    background-color: hsl(209, 59%, 22%);
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 1em;
 
     font-family: 'Montserrat';
     font-size: 1em;
-    color:hsl(209, 60%, 39%);
+    color:hsl(209, 100%, 92%);
 
     text-align: center;
+}
+
+.back-to-text:hover{
+    color: hsl(209, 100%, 72%);
 }
 
 /*Carrito no está vacío*/
@@ -44,6 +54,7 @@
 }
 
 .cart-item-container{
+    position:relative;
     margin: 0px;
     border-radius: 15px;
     width: 150px;
@@ -70,7 +81,7 @@
 
 .cart-item-price{
     position:absolute;
-    margin-top: 105px;
+    top: 77px;
     padding: .3em;
     border-radius: 5px;
 
@@ -86,7 +97,22 @@
 .cart-item-quantity{
     position: absolute;
     display: inline-block;
-    margin: 130px 0px 0px 0px;
+    bottom: 55px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.788);
+
+    font-family: 'Montserrat';
+    font-size: .8em;
+    color: rgb(255, 255, 255);
+ 
+    align-self: center;
+}
+
+.cart-item-subtotal{
+    position: absolute;
+    display: inline-block;
+    bottom: 30px;
     padding: 3px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.788);
