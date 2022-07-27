@@ -1,24 +1,24 @@
-### Proyecto CoderHouse | E-Commerce | React Js
+## **Proyecto CoderHouse | E-Commerce | React Js**
 Proyecto desarrollado React JS realizado para el curso de CoderHouse. Un E-Commerce orientado a productos y/o indumentaria deportiva. Cuenta con una navegación simple y totalmente intuitiva desde la selección de los productos hasta la finalizacion de la compra.
 
 ------------
 
-###:tw-1f4bb: Tecnologías utilizadas:
+## Tecnologías utilizadas:
 
-- #### Lenguajes:
+## **Lenguajes:**
 
 **- HTML5**
 **- CSS3**
 **- Javascript**
 
-- #### Extensiones / Librerias de desarrollo:
+## Extensiones / Librerias de desarrollo:
 
- **- SASS**
-  **- React Js**
+**- SASS**
+**- React Js**
 
 ------------
 
-###:tw-1f680: Iniciar proyecto localmente:
+### Iniciar proyecto localmente:
 Estos son los dos simples pasos a seguir para iniciarlo
 
 - Clonar repositorio ↓
@@ -34,7 +34,7 @@ Copia el comando de abajo y pegalo en tu terminal git
 ------------
 
 
-###:tw-1f466: Autor
+### Autor
 **Franco Delgado** | *Front-end React developer* | [Linkedin](https://www.linkedin.com/in/frandevgado/ "Linkedin").
 
 ------------
