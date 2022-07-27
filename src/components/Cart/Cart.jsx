@@ -46,8 +46,6 @@ const Cart = () => {
       <div className="button-flex">
 
         <button onClick={clearCart} className="button button-clear">Vaciar Carrito</button>
-
-    
       </div>
       <CartForm/>  
     </div>

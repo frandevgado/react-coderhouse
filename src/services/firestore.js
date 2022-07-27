@@ -11,11 +11,8 @@ const firebaseConfig = {
   measurementId: "G-PZRQVJFDKY"
 };
 
-// Initialize Firebase
 const appFirebase = initializeApp(firebaseConfig);
 const appFirestore = getFirestore(appFirebase);
-
-
 
 export async function getItems(){
   const sportItemsCollection = collection(appFirestore, "sport-shop-react")
@@ -48,13 +45,10 @@ export async function getItem(id) {
   
   const docData =  await getDoc(docRef)
 
-
   return{
       id:docData.id, ...docData.data()
   }
 }
-
-// -------
 
 const ordersCollection = collection(appFirestore,'orders');
 
@@ -69,13 +63,9 @@ export async function createBuyOrder(dataOrder){
     }
     
     const orderCreated = await addDoc(ordersCollection, orderWithDate);
-    
-    console.log(orderWithDate)
 
     return orderCreated
 }
-
-// --------
 
 
 export default appFirestore
