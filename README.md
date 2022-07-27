@@ -29,11 +29,11 @@ Copia el comando de abajo y pegalo en tu terminal git
 
 - Instalar modulos 
 Copia el comando de abajo y pegalo en tu terminal git
-` npm install`
+`git npm install`
 
 - Iniciar app 
 Copia el comando de abajo y pegalo en tu terminal git
-` npm start`
+`git npm start`
 
 ------------
 
